@@ -1,0 +1,55 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block }
+* { margin:0; padding:0 }
+body { font-family:arial; padding:20px; }
+p { }
+a { outline:0 }
+a:focus { outline: 5px solid black }
+
+#headerArea { margin-bottom:20px; }
+#content-wrapper { background-color:#EEE; width:100% }
+
+header { padding:10px; margin:0; width: 50%; float:left }
+header hgroup { width:100%; display: inline-block; }
+.skip a { display: none; }
+
+#loginArea 	{ width:49%; margin:0; padding:10px; float:right }
+#loginArea form { float:right; margin:0; padding: 0 }
+#loginArea form input { width:48%; float: left; padding: 0; height:30px; margin:0 0 10px 5px }
+#loginArea #signIn { width:97%; text-align: center; display: inline-block; background-color:#ccc; border-radius:5px; border:1px solid #000; line-height: 30px }
+.logoutArea { border:1px solid #000; width:100%; float:right; text-align:right; background-color:#ccc; border-radius:5px; padding:5px; display: inline-block }
+
+h1 { color:#a24446 !important; font-weight:bold; margin: 0; padding: 0 }
+h2 { color:#d7c12e !important; font-weight:bold; margin-top:-10px; padding: 0 }
+
+nav { margin-top:20px; float:left; width:100%; display: block; clear: both; height:80px; background-color:#a24446 }
+nav ul { list-style-type:none; display:block; padding:10px 0 6px 0 }
+nav ul li { display:inline-block; margin:0;}
+nav ul li a { text-decoration:none; color:#fff; font-weight:bold; padding:0 7px; display:block; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; }
+nav ul li a:hover { text-decoration:underline; color:#d7c12e }
+
+nav ul li ul { display:inline-block; border-top:1px solid #000; position:absolute; margin:10px 0 0 0; padding:5px 0 0 0;}
+nav ul li ul li a { text-decoration:none; color:#ccc; font-weight:bold; padding:0 7px; display:block; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; }
+nav ul li ul li a:hover { text-decoration:underline; color:#000 }
+
+#menutitle { display: none; }
+	
+#mainContent { float:left; padding:0 0 20px 0; margin:20px 0 0 0; width:100% }
+#mainContent p { padding:10px 5px 5px 0; line-height:1.4em }
+#mainContent ul li { list-style-type: none; display: inline-block; width:30%; }
+.left-off-canvas-menu ul { list-style-type: none; }
+
+footer { background-color:#a24446; clear:left }
+footer p { padding:10px; color:#fff; font-weight:bold; text-align:center; clear:left }
+footer p a { color:#fff; text-decoration:none }
+
+/* mediaQuery */
+  @media (max-width:767px) { 
+  	#mainContent ul li { list-style-type: none; display: inline-block; width:100%; } 
+	header, #loginArea, .logoutArea, #loginArea form { width:100%; float:left; }
+  }
+
+  @media (max-width:600px) { 
+	nav ul li { display: none; }
+  	#menutitle { display: block; margin:30px 10px }
+  	#menutitle a { background-color:#ccc; border-radius:10px; padding:10px; color:#000; }
+  }

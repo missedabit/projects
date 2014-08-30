@@ -1,0 +1,31 @@
+/*global*/
+  body, html { margin:0; height: 100%; overflow-x: hidden; font-family: arial, helvetica sans-serif; }
+  ul li { font-size:3.2em; font-weight:bold; }
+  p { color:#6b8970; font-size:.8em; }
+
+/*generic*/
+  #poster { margin:30px auto; height:100%; width:50%; height:auto; border:1px solid #ccc;
+    background-image: -ms-linear-gradient(top right, #FFFFFF 0%, #EDEDED 100%);
+    background-image: -moz-linear-gradient(top right, #FFFFFF 0%, #EDEDED 100%);
+    background-image: -o-linear-gradient(top right, #FFFFFF 0%, #EDEDED 100%);
+    background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #EDEDED));
+    background-image: -webkit-linear-gradient(top right, #FFFFFF 0%, #EDEDED 100%);
+    background-image: linear-gradient(to bottom left, #FFFFFF 0%, #EDEDED 100%) }
+
+  #entrance, #slide, #slide1 { position: relative; left:200%; width:80%; float:left; -webkit-animation: slide 2s forwards; -webkit-animation-delay: 1s; animation: slide 2s forwards; animation-delay: 1s; display: block }  
+  #slide { left:-200%; -webkit-animation-delay: 3s; animation-delay: 3s }
+  #slide1 { -webkit-animation-delay: 5s; animation-delay: 5s; color:#0077bf }
+  #slide ul, #slide1 ul { margin:0; padding:0; list-style-type: none }
+  #slide ul li { border-top:15px solid #0164aa; color:#00ad52 }
+  #slide1 ul li { border-top:15px solid #00ac47; }
+  #slide1 ul li:last-child { border-bottom:15px solid #00ac47; }
+  div#colourText p { -webkit-animation: colourText 20s; animation: colourText 20s; clear:both; width:80%; margin-left:10%; color: #6b8970; padding-bottom: 30px; padding-top: 10px }
+
+/*keyframes*/
+  @-webkit-keyframes slide { 100% { left:10% } }
+  @keyframes slide { 100% { left:10%} }
+  @-webkit-keyframes colourText { 0% { color:#EDEDED; } 25% { color:#EDEDED; } 100% { color: #6b8970; }}
+  @keyframes colourText { 0% { color:#EDEDED; } 25% { color:#EDEDED; } 100% { color: #6b8970; }} 
+
+/* mediaQuery */
+  @media (max-width:767px) { ul li { font-size:1.2em; font-weight:bold; } }

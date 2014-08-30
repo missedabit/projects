@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Mustache Sample</title>
+</head>
+<body>
+
+<ul id="talktitles"></ul>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.0/mustache.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<script id="speakers-template" type="text/template">
+	{{#custominfo}}
+		<li> Name: {{firstName}} {{lastName}} </li>
+	{{/custominfo}}
+</script>
+
+<script>
+	$(function() {
+		$.getJSON('form.json', function(data) {
+			var template = $('#speakers-template').html();
+			var info = Mustache.to_html(template, data);
+			$('#talktitles').html(info)
+		});
+	});
+</script>
+
+</body>
+</html>

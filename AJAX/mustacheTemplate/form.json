@@ -1,0 +1,28 @@
+{
+    "title" :[
+        {
+            "title": "My HomePage"
+        }
+    ],
+
+    "custominfo": [
+        {
+            "firstName": "John",
+            "lastName": "Smith",
+            "age": "25 years",
+            "address": "dfgdsf"
+        },
+        {
+            "firstName": "james",
+            "lastName": "Smith",
+            "age": "25 years",
+            "address": "sfsfsd"
+        },
+        {
+            "firstName": "fed",
+            "lastName": "Smith",
+            "age": "25 years",
+            "address": "sdfsdfs"
+        }
+    ]
+}
