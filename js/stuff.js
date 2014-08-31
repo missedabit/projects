@@ -23,4 +23,12 @@ $(document).ready( function() {
 		});
 	});
 
+	$(".trigger").one("click", function(){
+
+		$(".listItems").each( function(){
+			$("ul li").append("hellow").css("color","green");
+		});
+	});
+
+
 })
