@@ -18,7 +18,7 @@ $(document).ready( function() {
 
 	$(".loader").click( function(){
 		$("#loadContent").load("load.htm", function(data){
-			var title = "Title:";
+			var title = "My Title:";
 			$(this).html("<p>"+title+data+"</p>")
 		});
 	});
