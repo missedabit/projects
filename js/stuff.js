@@ -32,4 +32,16 @@ $(document).ready( function() {
 		});
 	});
 
+	$("#block3").css("float","left").css("width","200px").css("height","200px").css("background-color","orange").text("this is a block4");
+	$("#block4").css("float","left").css("width","200px").css("height","200px").css("background-color","pink").text("this is a block5");
+
+
+	$("#block3").click( function() {
+		$(this).toggle("slow", function(){
+			$("#block4").hide();
+			$(this).show();
+		});
+	} );
+
+
 })
