@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JSON test</title>
+
+<link rel="stylesheet" type="text/css" href="glasses.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<body>
+
+
+<div id="list"></div>
+
+
+<script type="text/javascript">     
+
+$(document).ready( function() {
+
+
+
+    $.ajax({
+        type : 'GET',
+        dataType : 'json',
+        url: 'glasses.json',
+        success : function(data) {
+
+		    $.each(data.productData, function (index, value) {
+
+		         var custList = "<ul><li>&pound;" + value.price + "</li>" + "<li>" + value.name + "</li>" + "<li>" + value.color + "</li></ul>";
+
+		         $(custList).appendTo("#list");
+		         $("#list ul:odd").css("background-color","#ccc");
+
+		    });
+
+		    
+        } 
+
+    });
+
+
+
+ });
+
+</script>
+
+
+</body>
+</html>

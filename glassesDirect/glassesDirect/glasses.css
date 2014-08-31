@@ -1,0 +1,4 @@
+#list { display:block; margin:0; padding:0; font-family:arial; border:1px solid #ccc; }
+	#list ul { list-style-type:none; margin:0; padding:0; height:30px; padding:10px; border:1px solid #ccc; }
+		#list ul li { float:left; width:25%; text-align:left; display:block  }
+			#list ul.oddColor { background-color: #ccc }

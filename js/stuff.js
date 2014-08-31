@@ -8,7 +8,9 @@ $(document).ready( function() {
 	$("#block2").css("float","left").css("width","200px").css("height","200px").css("background-color","yellow").text("this is a yellow");
 
 	$("#block1").click( function() {
-		$(this).slideToggle('slow');
+		$(this).slideToggle("slow", function(){
+			$(this).show().css("border","4px solid green");
+		});
 	} );
 
 	$("button").click( function(){
@@ -29,6 +31,5 @@ $(document).ready( function() {
 			$("ul li").append("hellow").css("color","green");
 		});
 	});
-
 
 })
