@@ -1,0 +1,40 @@
+{
+    "productData": [
+        {
+            "id": 1,
+            "name": "Retro",
+            "price": 10,
+            "color": "blue"
+        },
+        {
+            "id": 2,
+            "name": "Designer",
+            "price": 12,
+            "color": "red"
+        },
+        {
+            "id": 3,
+            "name": "Classic",
+            "price": 14,
+            "color": "yellow"
+        },
+        {
+            "id": 1,
+            "name": "Retro",
+            "price": 10,
+            "color": "blue"
+        },
+        {
+            "id": 4,
+            "name": "Rimless",
+            "price": 14,
+            "color": "purple"
+        },
+        {
+            "id": 5,
+            "name": "Glam & Sparkle",
+            "price": 8,
+            "color": "grey"
+        }
+    ]
+}

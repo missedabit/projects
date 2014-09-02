@@ -25,8 +25,8 @@ $(document).ready( function() {
 		});
 	});
 
-	$(".trigger").one("click", function(){
-
+	$(".trigger").one("click", function() {
+		$(this).css("cursor","pointer");
 		$(".listItems").each( function(){
 			$("ul li").append("hellow").css("color","green");
 		});
